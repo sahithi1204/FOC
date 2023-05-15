@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+ int sum_of_series(int n)
+{
+    int result = 0;
+    for (int i = 1; i <= n; i++) 
+    {
+        if (i % 2 == 0)
+            result = result - pow(i, 2);
+        else
+            result = result + pow(i, 2);
+    }
+    return result;
+}
+int main(void)
+{   
+    int n = 3;   
+    cout << sum_of_series(n) << endl;
+    n = 10;
+    cout << sum_of_series(n) << endl;
+}
