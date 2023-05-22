@@ -1,0 +1,21 @@
+nt main void  
+{  
+char in;  
+int bill;  
+printf ("Enter the number of credits user has taken ")  
+scanf("%c", &in)  
+if (in<=1000)  
+{
+bill = 15
+}  
+elseif (in>1000 and in<2000)  
+{
+bill = (( in - 1000) x 0.0175)
+}
+elseif (in>2000 and in<3000)  
+{ 
+bill =  (( in - 1000) x 0.02)
+{
+else  
+bill = 70
+return  bill
